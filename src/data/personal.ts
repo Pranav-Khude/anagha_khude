@@ -5,7 +5,7 @@ export const personal = {
   intro: "I am an urban planning and design professional with a background in architecture, interested in creating inclusive, sustainable and context-sensitive places through research, spatial thinking and design.",
   degrees: "Master of Urban Planning & Design · Bachelor of Architecture",
   email: "anaghakhude04@gmail.com",
-  linkedin: "https://www.linkedin.com/in/anagha-khude/",
+  linkedin: "www.linkedin.com/in/anagha-khude/",
   location: "Melbourne, Australia",
   portrait: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=800&fit=crop&crop=faces",
   cvLink: "/resume.pdf",
