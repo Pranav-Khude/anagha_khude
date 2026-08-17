@@ -1,0 +1,134 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: var(--header-height);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.heading {
+  font-family: var(--font-serif);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: var(--space-md);
+  color: var(--color-text);
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-md);
+}
+
+.intro {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-md);
+}
+
+.degrees {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.02em;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ctas {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.imageWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.portrait {
+  width: 100%;
+  max-width: 480px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  filter: grayscale(10%);
+}
+
+.imageWrapper::before {
+  content: '';
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-md);
+  right: calc(var(--space-md) * -1);
+  bottom: calc(var(--space-md) * -1);
+  border: 1px solid var(--color-border);
+  z-index: -1;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    gap: var(--space-lg);
+  }
+
+  .portrait {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: calc(var(--header-height) + var(--space-lg)) 0 var(--space-xl);
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+    text-align: center;
+  }
+
+  .content {
+    max-width: 100%;
+    order: 2;
+  }
+
+  .imageWrapper {
+    order: 1;
+  }
+
+  .portrait {
+    max-width: 320px;
+  }
+
+  .imageWrapper::before {
+    display: none;
+  }
+
+  .ctas {
+    justify-content: center;
+  }
+
+  .degrees {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
