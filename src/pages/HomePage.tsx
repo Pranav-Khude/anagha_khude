@@ -14,11 +14,11 @@ export const HomePage = () => {
   return (
     <>
       <Hero />
+      <Experience />
+      <Approach />
       <SelectedWork />
       <About />
-      <Approach />
       <Skills />
-      <Experience />
       <CV />
       <Contact />
       <Footer />

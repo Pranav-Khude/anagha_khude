@@ -26,8 +26,8 @@ export const Hero = () => {
           <p className={styles.intro}>{personal.intro}</p>
           <p className={styles.degrees}>{personal.degrees}</p>
           <div className={styles.ctas}>
+            <Button variant="secondary" onClick={handleScrollToAbout}>Background</Button>
             <Button onClick={handleScrollToWork}>View Selected Work</Button>
-            <Button variant="secondary" onClick={handleScrollToAbout}>About Me</Button>
           </div>
         </div>
 

@@ -7,7 +7,7 @@ export const personal = {
   email: "anaghakhude04@gmail.com",
   linkedin: "www.linkedin.com/in/anagha-khude/",
   location: "Melbourne, Australia",
-  portrait: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&h=800&fit=crop&crop=faces",
+  portrait: "/profilepic.png",
   cvLink: "/resume.pdf",
   aboutFull: `With a foundation in architecture and postgraduate training in urban planning and design, my work sits at the intersection of built form, public space, policy and community.
 

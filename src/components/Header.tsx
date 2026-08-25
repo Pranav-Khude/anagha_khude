@@ -5,12 +5,10 @@ import { personal } from '../data';
 import styles from './Header.module.css';
 
 const navLinks = [
-  { label: 'Work', to: '/#work' },
   { label: 'About', to: '/#about' },
-  { label: 'Approach', to: '/#approach' },
-  { label: 'Experience', to: '/#experience' },
-  { label: 'CV', to: '/#cv' },
+  { label: 'Work', to: '/#work' },
   { label: 'Blog', to: '/blog' },
+  { label: 'CV', to: '/#cv' },
   { label: 'Contact', to: '/#contact' },
 ];
 
