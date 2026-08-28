@@ -16,8 +16,8 @@ export const HomePage = () => {
       <Hero />
       <Experience />
       <Approach />
-      <SelectedWork />
       <About />
+      <SelectedWork />
       <Skills />
       <CV />
       <Contact />
