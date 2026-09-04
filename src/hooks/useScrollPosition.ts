@@ -8,7 +8,7 @@ export const useScrollPosition = () => {
     const handleScroll = () => {
       const position = window.scrollY;
       setScrollPosition(position);
-      setIsScrolled(position > 50);
+      setIsScrolled(position > window.innerHeight);
     };
 
     handleScroll();

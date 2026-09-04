@@ -1,0 +1,268 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Anagha Khude" [ref=e5] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=e6]:
+        - link "About" [ref=e7] [cursor=pointer]:
+          - /url: /#about
+        - link "Work" [ref=e8] [cursor=pointer]:
+          - /url: /#work
+        - link "Blog" [ref=e9] [cursor=pointer]:
+          - /url: /blog
+        - link "CV" [ref=e10] [cursor=pointer]:
+          - /url: /#cv
+        - link "Contact" [ref=e11] [cursor=pointer]:
+          - /url: /#contact
+  - generic [ref=e13]:
+    - generic [ref=e14]:
+      - heading "Designing Better Places, Shaping Better Futures." [level=1] [ref=e15]
+      - paragraph [ref=e16]: Urban Planner & Designer
+      - paragraph [ref=e17]: I am an urban planning and design professional with a background in architecture, interested in creating inclusive, sustainable and context-sensitive places through research, spatial thinking and design.
+      - paragraph [ref=e18]: Master of Urban Planning & Design · Bachelor of Architecture
+      - generic [ref=e19]:
+        - button "Background" [ref=e20] [cursor=pointer]
+        - button "View Selected Work" [ref=e21] [cursor=pointer]
+    - img "Anagha Khude" [ref=e23]
+  - generic [ref=e25]:
+    - generic [ref=e26]:
+      - generic [ref=e27]: Career
+      - heading "Experience" [level=2] [ref=e28]
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - heading "Urban Planning Intern" [level=3] [ref=e33]
+            - paragraph [ref=e34]: Planning Studio — Melbourne
+          - generic [ref=e35]: 2024–2025
+        - paragraph [ref=e36]: Assisted in preparing strategic planning documents, conducting site analyses, and contributing to urban design proposals for various municipal clients.
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39]:
+            - heading "Graduate Architectural Designer" [level=3] [ref=e40]
+            - paragraph [ref=e41]: Design Practice — India
+          - generic [ref=e42]: 2022–2023
+        - paragraph [ref=e43]: Worked on residential and commercial projects, developing design concepts, construction documentation, and client presentations.
+      - generic [ref=e44]:
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - heading "Research Assistant" [level=3] [ref=e47]
+            - paragraph [ref=e48]: Urban Planning Lab — University of Melbourne
+          - generic [ref=e49]: "2024"
+        - paragraph [ref=e50]: Conducted research on sustainable urban mobility, including data collection, analysis, and contribution to academic publications.
+  - generic [ref=e52]:
+    - generic [ref=e53]:
+      - generic [ref=e54]: Approach
+      - paragraph [ref=e55]: My approach brings together planning, spatial thinking and design to understand places, respond to people's needs and shape practical strategies for their future.
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - generic [ref=e58]: "01"
+        - heading "Context" [level=3] [ref=e59]
+        - paragraph [ref=e60]: Read the place before shaping it. I look at landscape, history, demographics, land use and development patterns to understand what makes each place unique and where opportunities for change exist.
+      - generic [ref=e61]:
+        - generic [ref=e62]: "02"
+        - heading "People" [level=3] [ref=e63]
+        - paragraph [ref=e64]: Plan for how people experience place. I consider housing, accessibility, community needs and liveability to create places that are inclusive, diverse and responsive to the people who use them.
+      - generic [ref=e65]:
+        - generic [ref=e66]: "03"
+        - heading "Strategy" [level=3] [ref=e67]
+        - paragraph [ref=e68]: Turn analysis into direction. I connect research and spatial analysis with planning policy, urban design and implementation to develop clear strategies that can guide growth and change.
+      - generic [ref=e69]:
+        - generic [ref=e70]: "04"
+        - heading "Sustainability" [level=3] [ref=e71]
+        - paragraph [ref=e72]: Design for long-term resilience. I consider environmental, social and economic factors to support places that can adapt to change while remaining liveable, connected and responsible.
+  - generic [ref=e74]:
+    - generic [ref=e75]:
+      - generic [ref=e76]: About
+      - heading "Background" [level=2] [ref=e77]
+    - generic [ref=e78]:
+      - generic [ref=e79]:
+        - paragraph [ref=e80]: With a foundation in architecture and postgraduate training in urban planning and design, my work sits at the intersection of built form, public space, policy and community.
+        - paragraph [ref=e81]: I believe that great places are born from a deep understanding of context—its history, culture, ecology, and the people who inhabit it. My approach combines rigorous research with creative spatial design to shape environments that are not only functional but also meaningful and enduring.
+        - paragraph [ref=e82]: Whether working on a city-wide strategic plan or a intimate public space, I bring the same level of care and attention to the relationship between buildings, streets, neighborhoods, and the broader urban fabric.
+      - generic [ref=e83]:
+        - heading "Education" [level=3] [ref=e84]
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - generic [ref=e87]: 2023–2025
+            - heading "Master of Urban Planning & Design" [level=4] [ref=e88]
+            - paragraph [ref=e89]: University of Melbourne
+          - generic [ref=e90]:
+            - generic [ref=e91]: 2017–2022
+            - heading "Bachelor of Architecture" [level=4] [ref=e92]
+            - paragraph [ref=e93]: School of Planning and Architecture
+  - generic [ref=e95]:
+    - generic [ref=e96]:
+      - generic [ref=e97]: Portfolio
+      - heading "Selected Work" [level=2] [ref=e98]
+    - generic [ref=e99]:
+      - link "Fishermans Bend Urban Renewal Melbourne, Australia · 2025 Fishermans Bend Urban Renewal Urban Planning Urban Design A comprehensive urban renewal strategy for Melbourne's largest urban renewal project, focusing on sustainable development and community integration." [ref=e101] [cursor=pointer]:
+        - /url: /project/fishermans-bend
+        - img "Fishermans Bend Urban Renewal" [ref=e103]
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - generic [ref=e106]: Melbourne, Australia
+            - generic [ref=e107]: ·
+            - generic [ref=e108]: "2025"
+          - heading "Fishermans Bend Urban Renewal" [level=3] [ref=e109]
+          - generic [ref=e110]:
+            - generic [ref=e111]: Urban Planning
+            - generic [ref=e112]: Urban Design
+          - paragraph [ref=e113]: A comprehensive urban renewal strategy for Melbourne's largest urban renewal project, focusing on sustainable development and community integration.
+      - link "Melton Housing Strategy Victoria, Australia · 2024 Melton Housing Strategy Strategic Planning A housing strategy addressing growth pressures and affordability challenges in Melbourne's rapidly expanding western corridor." [ref=e115] [cursor=pointer]:
+        - /url: /project/melton-housing
+        - img "Melton Housing Strategy" [ref=e117]
+        - generic [ref=e118]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: Victoria, Australia
+            - generic [ref=e121]: ·
+            - generic [ref=e122]: "2024"
+          - heading "Melton Housing Strategy" [level=3] [ref=e123]
+          - generic [ref=e124]: Strategic Planning
+          - paragraph [ref=e126]: A housing strategy addressing growth pressures and affordability challenges in Melbourne's rapidly expanding western corridor.
+      - link "City Plan 2036 Urban Strategy · 2024 City Plan 2036 Urban Strategy A long-term strategic plan shaping the future growth and development of a regional city over the next fifteen years." [ref=e128] [cursor=pointer]:
+        - /url: /project/city-plan-2036
+        - img "City Plan 2036" [ref=e130]
+        - generic [ref=e131]:
+          - generic [ref=e132]:
+            - generic [ref=e133]: Urban Strategy
+            - generic [ref=e134]: ·
+            - generic [ref=e135]: "2024"
+          - heading "City Plan 2036" [level=3] [ref=e136]
+          - generic [ref=e137]: Urban Strategy
+          - paragraph [ref=e139]: A long-term strategic plan shaping the future growth and development of a regional city over the next fifteen years.
+      - link "Adaptive Reuse & Heritage Melbourne, Australia · 2023 Adaptive Reuse & Heritage Architecture Urban Design Transforming heritage buildings into contemporary spaces while preserving cultural identity and architectural character." [ref=e141] [cursor=pointer]:
+        - /url: /project/adaptive-reuse
+        - img "Adaptive Reuse & Heritage" [ref=e143]
+        - generic [ref=e144]:
+          - generic [ref=e145]:
+            - generic [ref=e146]: Melbourne, Australia
+            - generic [ref=e147]: ·
+            - generic [ref=e148]: "2023"
+          - heading "Adaptive Reuse & Heritage" [level=3] [ref=e149]
+          - generic [ref=e150]:
+            - generic [ref=e151]: Architecture
+            - generic [ref=e152]: Urban Design
+          - paragraph [ref=e153]: Transforming heritage buildings into contemporary spaces while preserving cultural identity and architectural character.
+      - link "Sustainable Neighbourhood Framework Victoria, Australia · 2023 Sustainable Neighbourhood Framework Urban Design A framework for creating sustainable, resilient neighbourhoods that prioritize walking, green spaces, and community connection." [ref=e155] [cursor=pointer]:
+        - /url: /project/sustainable-neighbourhood
+        - img "Sustainable Neighbourhood Framework" [ref=e157]
+        - generic [ref=e158]:
+          - generic [ref=e159]:
+            - generic [ref=e160]: Victoria, Australia
+            - generic [ref=e161]: ·
+            - generic [ref=e162]: "2023"
+          - heading "Sustainable Neighbourhood Framework" [level=3] [ref=e163]
+          - generic [ref=e164]: Urban Design
+          - paragraph [ref=e166]: A framework for creating sustainable, resilient neighbourhoods that prioritize walking, green spaces, and community connection.
+      - link "Mixed-Use Precinct Design Melbourne, Australia · 2022 Mixed-Use Precinct Design Architecture Urban Planning A mixed-use development integrating residential, commercial, and community spaces around a vibrant public realm." [ref=e168] [cursor=pointer]:
+        - /url: /project/mixed-use-precinct
+        - img "Mixed-Use Precinct Design" [ref=e170]
+        - generic [ref=e171]:
+          - generic [ref=e172]:
+            - generic [ref=e173]: Melbourne, Australia
+            - generic [ref=e174]: ·
+            - generic [ref=e175]: "2022"
+          - heading "Mixed-Use Precinct Design" [level=3] [ref=e176]
+          - generic [ref=e177]:
+            - generic [ref=e178]: Architecture
+            - generic [ref=e179]: Urban Planning
+          - paragraph [ref=e180]: A mixed-use development integrating residential, commercial, and community spaces around a vibrant public realm.
+  - generic [ref=e182]:
+    - generic [ref=e183]:
+      - generic [ref=e184]: Expertise
+      - heading "Skills" [level=2] [ref=e185]
+    - generic [ref=e186]:
+      - generic [ref=e187]:
+        - heading "Urban Planning" [level=3] [ref=e188]
+        - list [ref=e189]:
+          - listitem [ref=e190]: Strategic Planning
+          - listitem [ref=e191]: Statutory Planning
+          - listitem [ref=e192]: Structure Planning
+          - listitem [ref=e193]: Policy Analysis
+          - listitem [ref=e194]: Housing Strategy
+          - listitem [ref=e195]: Urban Regeneration
+      - generic [ref=e196]:
+        - heading "Urban Design" [level=3] [ref=e197]
+        - list [ref=e198]:
+          - listitem [ref=e199]: Masterplanning
+          - listitem [ref=e200]: Public Realm Design
+          - listitem [ref=e201]: Precinct Planning
+          - listitem [ref=e202]: Spatial Analysis
+          - listitem [ref=e203]: Place-Making
+      - generic [ref=e204]:
+        - heading "Architecture" [level=3] [ref=e205]
+        - list [ref=e206]:
+          - listitem [ref=e207]: Architectural Design
+          - listitem [ref=e208]: Concept Development
+          - listitem [ref=e209]: Adaptive Reuse
+          - listitem [ref=e210]: Heritage
+          - listitem [ref=e211]: Construction Documentation
+      - generic [ref=e212]:
+        - heading "Tools" [level=3] [ref=e213]
+        - list [ref=e214]:
+          - listitem [ref=e215]: AutoCAD
+          - listitem [ref=e216]: Rhino
+          - listitem [ref=e217]: Adobe Creative Suite
+          - listitem [ref=e218]: ArcGIS / QGIS
+          - listitem [ref=e219]: SketchUp
+          - listitem [ref=e220]: Microsoft Office
+  - generic [ref=e222]:
+    - generic [ref=e223]:
+      - generic [ref=e224]: Resume
+      - heading "Curriculum Vitae" [level=2] [ref=e225]
+    - generic [ref=e226]:
+      - generic [ref=e227]:
+        - generic [ref=e228]:
+          - heading "Education" [level=3] [ref=e229]
+          - list [ref=e230]:
+            - listitem [ref=e231]: Master of Urban Planning & Design, University of Melbourne (2023–2025)
+            - listitem [ref=e232]: Bachelor of Architecture, School of Planning and Architecture (2017–2022)
+        - generic [ref=e233]:
+          - heading "Professional Experience" [level=3] [ref=e234]
+          - list [ref=e235]:
+            - listitem [ref=e236]: Urban Planning Intern, Planning Studio, Melbourne (2024–2025)
+            - listitem [ref=e237]: Graduate Architectural Designer, Design Practice, India (2022–2023)
+            - listitem [ref=e238]: Research Assistant, Urban Planning Lab, University of Melbourne (2024)
+        - generic [ref=e239]:
+          - heading "Selected Projects" [level=3] [ref=e240]
+          - list [ref=e241]:
+            - listitem [ref=e242]: Fishermans Bend Urban Renewal, Melbourne (2025)
+            - listitem [ref=e243]: Melton Housing Strategy, Victoria (2024)
+            - listitem [ref=e244]: City Plan 2036, Urban Strategy (2024)
+            - listitem [ref=e245]: Adaptive Reuse & Heritage Study (2023)
+            - listitem [ref=e246]: Sustainable Neighbourhood Framework (2023)
+        - generic [ref=e247]:
+          - heading "Skills" [level=3] [ref=e248]
+          - list [ref=e249]:
+            - listitem [ref=e250]: Strategic Planning, Statutory Planning, Structure Planning
+            - listitem [ref=e251]: Masterplanning, Public Realm Design, Place-Making
+            - listitem [ref=e252]: Architectural Design, Construction Documentation
+        - generic [ref=e253]:
+          - heading "Software" [level=3] [ref=e254]
+          - list [ref=e255]:
+            - listitem [ref=e256]: AutoCAD, Rhino, SketchUp
+            - listitem [ref=e257]: Adobe Creative Suite (Illustrator, InDesign, Photoshop)
+            - listitem [ref=e258]: ArcGIS, QGIS
+            - listitem [ref=e259]: Microsoft Office
+      - generic [ref=e261]:
+        - paragraph [ref=e262]: View my full CV for a comprehensive overview of my education, experience, and qualifications.
+        - link "View CV" [ref=e263] [cursor=pointer]:
+          - /url: /resume.pdf
+  - generic [ref=e266]:
+    - generic [ref=e267]: Get in Touch
+    - heading "Let's Talk About Places." [level=2] [ref=e268]
+    - paragraph [ref=e269]: For opportunities, collaborations or conversations around urban planning, urban design and architecture, feel free to reach out.
+  - contentinfo [ref=e270]:
+    - generic [ref=e271]:
+      - generic [ref=e272]:
+        - generic [ref=e273]:
+          - heading "Anagha Khude" [level=3] [ref=e274]
+          - paragraph [ref=e275]: Urban Planner & Designer
+          - paragraph [ref=e276]: Architecture · Urban Planning · Urban Design
+        - generic [ref=e277]:
+          - link "LinkedIn" [ref=e278] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/anagha-khude/
+          - link "Email" [ref=e279] [cursor=pointer]:
+            - /url: mailto:anaghakhude04@gmail.com
+      - paragraph [ref=e282]: © 2026 Anagha Khude. All rights reserved.

@@ -7,12 +7,30 @@
   z-index: 1000;
   transition: background-color var(--transition-base), border-color var(--transition-base);
   border-bottom: 1px solid transparent;
+  background-color: rgba(245, 242, 234, 0.95);
+  backdrop-filter: blur(8px);
 }
 
 .header.scrolled {
-  background-color: rgba(245, 243, 238, 0.95);
+  background-color: rgba(245, 242, 234, 0.95);
   border-bottom-color: var(--color-border);
-  backdrop-filter: blur(8px);
+}
+
+.header.hero {
+  background-color: transparent;
+  backdrop-filter: none;
+}
+
+.header.hero .logo {
+  opacity: 0;
+}
+
+.header.hero .navLink {
+  color: var(--color-text);
+}
+
+.header.hero .hamburgerLine {
+  background-color: var(--color-text);
 }
 
 .container {
@@ -26,11 +44,16 @@
 }
 
 .logo {
-  font-family: var(--font-serif);
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  font-weight: 600;
   color: var(--color-text);
   letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 .desktopNav {
@@ -39,7 +62,7 @@
 }
 
 .navLink {
-  font-size: 0.875rem;
+  font-size: var(--text-sm);
   font-weight: 400;
   color: var(--color-text-secondary);
   letter-spacing: 0.03em;
@@ -125,8 +148,9 @@
 }
 
 .mobileNavLink {
-  font-family: var(--font-serif);
-  font-size: 2rem;
+  font-family: var(--font-sans);
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  font-weight: 600;
   color: var(--color-text);
   opacity: 0;
   transform: translateY(20px);

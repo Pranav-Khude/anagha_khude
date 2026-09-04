@@ -1,0 +1,117 @@
+.main {
+  padding: var(--space-2xl) 0;
+  background-color: var(--color-bg);
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+}
+
+.header {
+  margin-bottom: var(--space-lg);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+}
+
+.header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.label {
+  display: block;
+  font-size: var(--text-xs);
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.title {
+  display: none;
+}
+
+.download {
+  margin-bottom: var(--space-2xl);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+  transition-delay: 200ms;
+}
+
+.download.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.downloadText {
+  font-size: var(--text-lg);
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-lg);
+}
+
+.viewLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: none;
+  padding: var(--space-md) var(--space-lg);
+  border: 1px solid var(--color-border);
+  transition: all var(--transition-fast);
+}
+
+.viewLink:hover {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  border-color: var(--color-text);
+}
+
+.contact {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--transition-slow), transform var(--transition-slow);
+  transition-delay: 400ms;
+}
+
+.contact.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contactTitle {
+  font-family: var(--font-sans);
+  font-size: var(--text-3xl);
+  font-weight: 600;
+  color: var(--color-text);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-lg);
+}
+
+.contactIntro {
+  font-size: var(--text-lg);
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  .header {
+    margin-bottom: var(--space-xl);
+  }
+
+  .download {
+    margin-bottom: var(--space-xl);
+  }
+}

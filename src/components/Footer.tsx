@@ -9,7 +9,6 @@ export const Footer = () => {
           <div className={styles.brand}>
             <h3 className={styles.name}>{personal.name}</h3>
             <p className={styles.title}>{personal.title}</p>
-            <p className={styles.tagline}>Architecture · Urban Planning · Urban Design</p>
           </div>
 
           <div className={styles.links}>

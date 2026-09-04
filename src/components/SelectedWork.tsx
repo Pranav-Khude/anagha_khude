@@ -1,10 +1,11 @@
-import { projects } from '../data';
+import { getFeaturedProjects } from '../data';
 import { ProjectCard } from './ProjectCard';
 import { useScrollReveal } from '../hooks';
 import styles from './SelectedWork.module.css';
 
 export const SelectedWork = () => {
   const { ref, isVisible } = useScrollReveal({ threshold: 0.1 });
+  const featuredProjects = getFeaturedProjects();
 
   return (
     <section id="work" className={styles.section} ref={ref as React.RefObject<HTMLElement>}>
@@ -15,7 +16,7 @@ export const SelectedWork = () => {
         </header>
 
         <div className={styles.grid}>
-          {projects.map((project, index) => (
+          {featuredProjects.map((project, index) => (
             <div
               key={project.id}
               className={`${styles.item} ${isVisible ? styles.visible : ''}`}

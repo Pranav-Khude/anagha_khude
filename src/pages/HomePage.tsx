@@ -4,7 +4,6 @@ import {
   About,
   Approach,
   Skills,
-  Experience,
   CV,
   Contact,
   Footer,
@@ -14,10 +13,9 @@ export const HomePage = () => {
   return (
     <>
       <Hero />
-      <Experience />
       <Approach />
-      <About />
       <SelectedWork />
+      <About />
       <Skills />
       <CV />
       <Contact />

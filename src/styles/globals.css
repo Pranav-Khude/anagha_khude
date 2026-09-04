@@ -1,20 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --color-bg: #FAF9F6;
-  --color-text: #1A1A1A;
-  --color-text-secondary: #5C5C5C;
-  --color-accent: #2D5A47;
-  --color-border: #D4D0C8;
+  --color-bg: #F5F2EA;
+  --color-text: #34302A;
+  --color-text-secondary: #6B6356;
+  --color-accent: #526A73;
+  --color-border: #D8D0C1;
+  --color-muted: #8A7661;
+  --color-light: #FAF9F5;
 
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
 
   --space-xs: 8px;
   --space-sm: 16px;
   --space-md: 24px;
-  --space-lg: 48px;
-  --space-xl: 80px;
-  --space-2xl: 120px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+  --space-2xl: 80px;
+  --space-3xl: 120px;
+  --space-4xl: 160px;
 
   --max-width: 1400px;
   --header-height: 80px;
@@ -22,6 +27,17 @@
   --transition-fast: 200ms ease;
   --transition-base: 400ms ease;
   --transition-slow: 600ms ease-out;
+
+  --text-xs: clamp(0.875rem, 0.8rem + 0.4vw, 1rem);
+  --text-sm: clamp(0.9375rem, 0.9rem + 0.35vw, 1.0625rem);
+  --text-base: clamp(1.0625rem, 1rem + 0.4vw, 1.1875rem);
+  --text-md: clamp(1.0625rem, 1rem + 0.4vw, 1.1875rem);
+  --text-lg: clamp(1.1875rem, 1.1rem + 0.5vw, 1.375rem);
+  --text-xl: clamp(1.375rem, 1.2rem + 0.9vw, 1.75rem);
+  --text-2xl: clamp(1.5rem, 1.25rem + 1.2vw, 2rem);
+  --text-3xl: clamp(2rem, 1.5rem + 2vw, 3rem);
+  --text-4xl: clamp(2.5rem, 1.75rem + 3vw, 4rem);
+  --text-5xl: clamp(3rem, 2rem + 4vw, 5rem);
 }
 
 *,
@@ -38,8 +54,8 @@ html {
 
 body {
   font-family: var(--font-sans);
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: var(--text-base);
+  line-height: 1.65;
   color: var(--color-text);
   background-color: var(--color-bg);
   -webkit-font-smoothing: antialiased;
@@ -49,7 +65,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-sans);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.15;
   letter-spacing: -0.02em;
 }
 
@@ -117,9 +133,9 @@ input, textarea {
 }
 
 .container {
-  max-width: var(--max-width);
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0 var(--space-md);
+  padding: 0 var(--space-lg);
 }
 
 .section {
@@ -131,11 +147,19 @@ input, textarea {
     --space-2xl: 80px;
     --header-height: 72px;
   }
+
+  .container {
+    padding: 0 var(--space-md);
+  }
 }
 
 @media (max-width: 768px) {
   :root {
     --space-2xl: 60px;
     --header-height: 64px;
+  }
+
+  .container {
+    padding: 0 var(--space-sm);
   }
 }

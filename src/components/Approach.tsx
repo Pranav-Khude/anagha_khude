@@ -9,10 +9,9 @@ export const Approach = () => {
     <section id="approach" className={styles.section} ref={ref as React.RefObject<HTMLElement>}>
       <div className={styles.container}>
         <header className={`${styles.header} ${isVisible ? styles.visible : ''}`}>
-          <span className={styles.label}>Philosophy</span>
-          <h2 className={styles.title}>Design Approach</h2>
+          <span className={styles.label}>Approach</span>
           <p className={styles.intro}>
-            Four principles that guide my work in shaping better places.
+            My approach brings together planning, spatial thinking and design to understand places, respond to people's needs and shape practical strategies for their future.
           </p>
         </header>
 

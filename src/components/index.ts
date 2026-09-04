@@ -11,3 +11,4 @@ export { Skills } from './Skills';
 export { Experience } from './Experience';
 export { CV } from './CV';
 export { Contact } from './Contact';
+export { ScrollToTop } from './ScrollToTop';

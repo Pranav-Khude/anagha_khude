@@ -12,79 +12,187 @@ export const ProjectDetailPage = () => {
       <div className={styles.notFound}>
         <h1>Project Not Found</h1>
         <p>The project you're looking for doesn't exist.</p>
-        <Link to="/#work" className={styles.backLink}>
-          ← Back to Work
+        <Link to="/" className={styles.backLink}>
+          ← Back to Home
         </Link>
       </div>
     );
   }
 
+  const isBlogArticle = project.sections && project.sections.length > 0;
+
   return (
     <>
       <main className={styles.main}>
-        <section className={styles.hero}>
-          <div className={styles.heroImage}>
-            <img src={project.coverImage} alt={project.title} />
-          </div>
-        </section>
+        <article className={styles.article}>
+          <header className={styles.header}>
+            <h1 className={styles.title}>{project.title}</h1>
+            {project.subtitle && (
+              <p className={styles.subtitle}>{project.subtitle}</p>
+            )}
+          </header>
 
-        <section className={styles.content}>
-          <div className={styles.container}>
-            <Link to="/#work" className={styles.backLink}>
-              ← Back to Work
-            </Link>
-
-            <header className={styles.header}>
-              <h1 className={styles.title}>{project.title}</h1>
-              <div className={styles.meta}>
-                <span className={styles.metaItem}>{project.location}</span>
-                <span className={styles.metaSeparator}>·</span>
-                <span className={styles.metaItem}>{project.year}</span>
-              </div>
-              <div className={styles.tags}>
-                {project.discipline.map((tag) => (
-                  <span key={tag} className={styles.tag}>
-                    {tag}
-                  </span>
+          {isBlogArticle ? (
+            <div className={styles.articleLayout}>
+              <div className={styles.articleContent}>
+                {project.sections!.map((section, index) => (
+                  <section key={index} className={styles.articleSection}>
+                    {section.label && section.label !== "Research Details" && (
+                      <h2 className={styles.sectionLabel}>{section.label}</h2>
+                    )}
+                    <div className={styles.sectionContent}>
+                      {section.content.split('\n\n').map((paragraph, pIndex) => (
+                        <p key={pIndex} className={styles.paragraph}>{paragraph}</p>
+                      ))}
+                    </div>
+                    {index === 1 && project.coverImage && (
+                      <div className={styles.imagePlaceholder}>
+                        <img src={project.coverImage} alt="Research" />
+                      </div>
+                    )}
+                  </section>
                 ))}
               </div>
-            </header>
-
-            <div className={styles.grid}>
-              <div className={styles.mainContent}>
-                <section className={styles.section}>
-                  <h2 className={styles.sectionTitle}>Overview</h2>
-                  <p className={styles.sectionText}>{project.overview}</p>
+              <aside className={styles.sidebar}>
+                {project.id === 'public-library' && (
+                  <>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Research</h3>
+                      <p className={styles.sidebarValue}>Public Libraries — City of Melton</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Type</h3>
+                      <p className={styles.sidebarValue}>Community Infrastructure Research</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Role</h3>
+                      <p className={styles.sidebarValue}>Individual Research</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Methods</h3>
+                      <p className={styles.sidebarValue}>Demographic analysis · Literature review · Community infrastructure analysis · Spatial mapping</p>
+                    </div>
+                  </>
+                )}
+                {project.id === 'rethinking-the-city' && (
+                  <>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Research</h3>
+                      <p className={styles.sidebarValue}>Compact Cities, Nature, Urban Spaces and COVID-19 Pandemic</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Type</h3>
+                      <p className={styles.sidebarValue}>Critical Urban Planning Research</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Role</h3>
+                      <p className={styles.sidebarValue}>Individual academic research</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Key themes</h3>
+                      <p className={styles.sidebarValue}>Compact cities · 15-minute city · Urban nature · Public space · Active transport · Community · Urban resilience</p>
+                    </div>
+                  </>
+                )}
+                {project.id === 'economy-and-city' && (
+                  <>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Title</h3>
+                      <p className={styles.sidebarValue}>Economic Profile — Western Metro Region of Melbourne Metropolitan</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Type</h3>
+                      <p className={styles.sidebarValue}>Individual economic and regional planning research</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Study area</h3>
+                      <p className={styles.sidebarValue}>Western Metropolitan Melbourne</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Focus</h3>
+                      <p className={styles.sidebarValue}>Economic profile · Employment · Industry concentration · Regional competitiveness · Economic clusters · Strategic planning</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Data</h3>
+                      <p className={styles.sidebarValue}>ABS Census — Place of Work data, 2011 and 2021</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Methods</h3>
+                      <p className={styles.sidebarValue}>Location Quotient · Shift-Share Analysis · Cluster Theory Analysis</p>
+                    </div>
+                  </>
+                )}
+                {project.id === 'elsternwick' && (
+                  <>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Project</h3>
+                      <p className={styles.sidebarValue}>Elsternwick Activity Centre Case Study</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Location</h3>
+                      <p className={styles.sidebarValue}>Elsternwick, Melbourne</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Type</h3>
+                      <p className={styles.sidebarValue}>Activity Centre Research / Urban Analysis</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Role</h3>
+                      <p className={styles.sidebarValue}>Collaborative Research Project</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Team</h3>
+                      <p className={styles.sidebarValue}>Anagha Khude · Natsumi Maeda · Phillip Mai</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Focus</h3>
+                      <p className={styles.sidebarValue}>Activity centres · Public realm · Transport · Walking · Cycling · Open space · Landscape · Urban character</p>
+                    </div>
+                  </>
+                )}
+              </aside>
+            </div>
+          ) : (
+            <div className={styles.articleLayout}>
+              <div className={styles.articleContent}>
+                <section className={styles.articleSection}>
+                  <h2 className={styles.sectionLabel}>Overview</h2>
+                  <div className={styles.sectionContent}>
+                    <p className={styles.paragraph}>{project.overview}</p>
+                  </div>
                 </section>
-
-                <section className={styles.section}>
-                  <h2 className={styles.sectionTitle}>Objectives</h2>
-                  <ul className={styles.objectivesList}>
+                <section className={styles.articleSection}>
+                  <h2 className={styles.sectionLabel}>Objectives</h2>
+                  <div className={styles.sectionContent}>
                     {project.objectives.map((objective, index) => (
-                      <li key={index} className={styles.objectiveItem}>
-                        {objective}
-                      </li>
+                      <p key={index} className={styles.paragraph}>{objective}</p>
                     ))}
-                  </ul>
+                  </div>
                 </section>
-
-                <section className={styles.section}>
-                  <h2 className={styles.sectionTitle}>Approach</h2>
-                  <p className={styles.sectionText}>{project.approach}</p>
+                <section className={styles.articleSection}>
+                  <h2 className={styles.sectionLabel}>Approach</h2>
+                  <div className={styles.sectionContent}>
+                    <p className={styles.paragraph}>{project.approach}</p>
+                  </div>
                 </section>
-
-                <section className={styles.section}>
-                  <h2 className={styles.sectionTitle}>Outcomes</h2>
-                  <p className={styles.sectionText}>{project.outcomes}</p>
+                <section className={styles.articleSection}>
+                  <h2 className={styles.sectionLabel}>Outcomes</h2>
+                  <div className={styles.sectionContent}>
+                    <p className={styles.paragraph}>{project.outcomes}</p>
+                  </div>
                 </section>
+                {project.images.length > 0 && (
+                  <section className={styles.articleSection}>
+                    <div className={styles.imagePlaceholder}>
+                      <img src={project.images[0]} alt={project.title} />
+                    </div>
+                  </section>
+                )}
               </div>
-
               <aside className={styles.sidebar}>
                 <div className={styles.sidebarSection}>
-                  <h3 className={styles.sidebarLabel}>Project Type</h3>
-                  <p className={styles.sidebarValue}>
-                    {project.discipline.join(' + ')}
-                  </p>
+                  <h3 className={styles.sidebarLabel}>Type</h3>
+                  <p className={styles.sidebarValue}>{project.discipline.join(' + ')}</p>
                 </div>
                 <div className={styles.sidebarSection}>
                   <h3 className={styles.sidebarLabel}>Location</h3>
@@ -96,22 +204,8 @@ export const ProjectDetailPage = () => {
                 </div>
               </aside>
             </div>
-
-            <section className={styles.gallery}>
-              <h2 className={styles.sectionTitle}>Project Gallery</h2>
-              <div className={styles.galleryGrid}>
-                {project.images.map((image, index) => (
-                  <div
-                    key={index}
-                    className={`${styles.galleryItem} ${index === 0 ? styles.featured : ''}`}
-                  >
-                    <img src={image} alt={`${project.title} - Image ${index + 1}`} />
-                  </div>
-                ))}
-              </div>
-            </section>
-          </div>
-        </section>
+          )}
+        </article>
       </main>
       <Footer />
     </>

@@ -21,20 +21,20 @@
 }
 
 .name {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-family: var(--font-sans);
+  font-size: var(--text-lg);
+  font-weight: 600;
   margin-bottom: var(--space-xs);
 }
 
 .title {
-  font-size: 0.875rem;
+  font-size: var(--text-sm);
   color: var(--color-text-secondary);
   margin-bottom: var(--space-xs);
 }
 
 .tagline {
-  font-size: 0.75rem;
+  font-size: var(--text-xs);
   color: var(--color-text-secondary);
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -46,7 +46,7 @@
 }
 
 .link {
-  font-size: 0.875rem;
+  font-size: var(--text-sm);
   color: var(--color-text-secondary);
   transition: color var(--transition-fast);
 }
@@ -68,7 +68,7 @@
 }
 
 .copyright {
-  font-size: 0.75rem;
+  font-size: var(--text-xs);
   color: var(--color-text-secondary);
 }
 

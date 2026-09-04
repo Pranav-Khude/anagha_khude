@@ -8,24 +8,24 @@ export interface Experience {
 
 export const experience: Experience[] = [
   {
-    role: "Urban Planning Intern",
-    organization: "Planning Studio",
+    role: "Urban Design Intern",
+    organization: "MGS Architects",
     location: "Melbourne",
-    period: "2024–2025",
-    description: "Assisted in preparing strategic planning documents, conducting site analyses, and contributing to urban design proposals for various municipal clients."
+    period: "July 2024 - August 2024",
+    description: ""
   },
   {
-    role: "Graduate Architectural Designer",
-    organization: "Design Practice",
+    role: "Graduate Architect",
+    organization: "Avishkar Group",
     location: "India",
-    period: "2022–2023",
-    description: "Worked on residential and commercial projects, developing design concepts, construction documentation, and client presentations."
+    period: "September 2021 - December 2022",
+    description: ""
   },
   {
-    role: "Research Assistant",
-    organization: "Urban Planning Lab",
-    location: "University of Melbourne",
-    period: "2024",
-    description: "Conducted research on sustainable urban mobility, including data collection, analysis, and contribution to academic publications."
+    role: "Architectural Intern",
+    organization: "Entasys Architects",
+    location: "India",
+    period: "July 2020 - November 2020",
+    description: ""
   }
 ];

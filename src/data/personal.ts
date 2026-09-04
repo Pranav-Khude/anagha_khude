@@ -1,39 +1,36 @@
 export const personal = {
   name: "Anagha Khude",
-  title: "Urban Planner & Designer",
-  tagline: "Designing Better Places, Shaping Better Futures.",
-  intro: "I am an urban planning and design professional with a background in architecture, interested in creating inclusive, sustainable and context-sensitive places through research, spatial thinking and design.",
+  title: "Urban Planning . Urban Design . Architecture",
+  tagline: "ANAGHA KHUDE",
+  intro: "PLACES ARE NEVER JUST PLACES",
+  introFull: "An urban planner and architect with a Master of Urban Planning and Design from Monash University and professional experience in architecture and urban design.\n\nThe work sits across planning and design, from understanding how a town, neighbourhood or precinct functions to considering the streets, public spaces and buildings that shape everyday experience. This includes work in strategic planning, urban design, land use, development and architectural design.\n\nPast projects have explored housing growth in Melton, the relationship between agriculture and town structure in Koo Wee Rup, industrial change in Fishermans Bend, and employment, movement and neighbourhood connections in Sunshine North. Architectural experience across residential, commercial and institutional projects has also shaped an interest in how people experience spaces at a more human scale.\n\nAcross these different types of work, the focus is on understanding a place first, identifying what is working and what could change, and then using planning and design to develop a considered response.",
   degrees: "Master of Urban Planning & Design · Bachelor of Architecture",
   email: "anaghakhude04@gmail.com",
   linkedin: "www.linkedin.com/in/anagha-khude/",
   location: "Melbourne, Australia",
   portrait: "/profilepic.png",
   cvLink: "/resume.pdf",
-  aboutFull: `With a foundation in architecture and postgraduate training in urban planning and design, my work sits at the intersection of built form, public space, policy and community.
-
-I believe that great places are born from a deep understanding of context—its history, culture, ecology, and the people who inhabit it. My approach combines rigorous research with creative spatial design to shape environments that are not only functional but also meaningful and enduring.
-
-Whether working on a city-wide strategic plan or a intimate public space, I bring the same level of care and attention to the relationship between buildings, streets, neighborhoods, and the broader urban fabric.`,
+  aboutFull: "",
   approach: [
     {
       number: "01",
       title: "Context",
-      description: "Understanding place, history, culture and environment."
+      description: "Read the place before shaping it.\nI look at landscape, history, demographics, land use and development patterns to understand what makes each place unique and where opportunities for change exist."
     },
     {
       number: "02",
       title: "People",
-      description: "Designing inclusive and people-centred environments."
+      description: "Plan for how people experience place.\nI consider housing, accessibility, community needs and liveability to create places that are inclusive, diverse and responsive to the people who use them."
     },
     {
       number: "03",
       title: "Strategy",
-      description: "Connecting spatial design with planning policy and long-term outcomes."
+      description: "Turn analysis into direction.\nI connect research and spatial analysis with planning policy, urban design and implementation to develop clear strategies that can guide growth and change."
     },
     {
       number: "04",
       title: "Sustainability",
-      description: "Creating resilient, adaptable and environmentally responsible places."
+      description: "Design for long-term resilience.\nI consider environmental, social and economic factors to support places that can adapt to change while remaining liveable, connected and responsible."
     }
   ]
 };

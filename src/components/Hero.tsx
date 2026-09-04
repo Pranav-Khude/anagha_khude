@@ -19,24 +19,29 @@ export const Hero = () => {
 
   return (
     <section className={styles.hero}>
+      <div className={styles.heroImageWrapper}>
+        <div className={styles.heroImagePlaceholder}></div>
+        <div className={styles.nameOverlay}>
+          <h1 className={styles.heading}>{personal.tagline}</h1>
+          <p className={styles.heroSubtitle}>{personal.title}</p>
+        </div>
+      </div>
+
       <div className={styles.container}>
         <div className={styles.content}>
-          <h1 className={styles.heading}>{personal.tagline}</h1>
-          <p className={styles.subtitle}>{personal.title}</p>
-          <p className={styles.intro}>{personal.intro}</p>
-          <p className={styles.degrees}>{personal.degrees}</p>
-          <div className={styles.ctas}>
-            <Button variant="secondary" onClick={handleScrollToAbout}>Background</Button>
-            <Button onClick={handleScrollToWork}>View Selected Work</Button>
+          <div className={styles.bioSection}>
+            <p className={styles.intro}>{personal.intro}</p>
+            {personal.introFull.split('\n\n').map((paragraph, index) => (
+              <p key={index} className={styles.introFull}>{paragraph}</p>
+            ))}
+            <div className={styles.ctas}>
+              <Button variant="secondary" onClick={handleScrollToAbout}>Background</Button>
+              <Button onClick={handleScrollToWork}>View Selected Work</Button>
+            </div>
           </div>
-        </div>
-
-        <div className={styles.imageWrapper}>
-          <img
-            src={personal.portrait}
-            alt={personal.name}
-            className={styles.portrait}
-          />
+          <div className={styles.imageSection}>
+            <div className={styles.gridPlaceholder}></div>
+          </div>
         </div>
       </div>
     </section>

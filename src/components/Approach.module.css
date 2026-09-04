@@ -5,13 +5,13 @@
 }
 
 .container {
-  max-width: var(--max-width);
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0 var(--space-md);
+  padding: 0 var(--space-lg);
 }
 
 .header {
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-2xl);
   opacity: 0;
   transform: translateY(20px);
   transition: opacity var(--transition-slow), transform var(--transition-slow);
@@ -24,32 +24,26 @@
 
 .label {
   display: block;
-  font-size: 0.75rem;
+  font-size: var(--text-xs);
   font-weight: 500;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--color-border);
-  margin-bottom: var(--space-sm);
-}
-
-.title {
-  font-family: var(--font-serif);
-  font-size: clamp(2rem, 4vw, 3rem);
-  font-weight: 500;
-  color: var(--color-bg);
+  color: var(--color-muted);
   margin-bottom: var(--space-md);
 }
 
 .intro {
-  font-size: 1.125rem;
+  font-size: var(--text-lg);
+  line-height: 1.55;
   color: var(--color-border);
-  max-width: 500px;
+  max-width: 580px;
+  font-weight: 400;
 }
 
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: var(--space-lg);
+  gap: var(--space-xl);
 }
 
 .item {
@@ -65,25 +59,27 @@
 
 .number {
   display: block;
-  font-family: var(--font-serif);
-  font-size: 3rem;
-  font-weight: 400;
+  font-family: var(--font-sans);
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 700;
   color: var(--color-accent);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-lg);
   line-height: 1;
+  letter-spacing: -0.03em;
 }
 
 .principleTitle {
-  font-family: var(--font-serif);
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-family: var(--font-sans);
+  font-size: var(--text-md);
+  font-weight: 600;
   color: var(--color-bg);
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
+  letter-spacing: 0;
 }
 
 .description {
-  font-size: 0.9375rem;
-  line-height: 1.6;
+  font-size: var(--text-base);
+  line-height: 1.65;
   color: var(--color-border);
 }
 
@@ -95,6 +91,18 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  .header {
+    margin-bottom: var(--space-xl);
+  }
+
+  .intro {
+    font-size: var(--text-base);
+  }
+
   .grid {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
@@ -102,7 +110,7 @@
 
   .item {
     padding-top: var(--space-lg);
-    border-top: 1px solid rgba(216, 212, 204, 0.2);
+    border-top: 1px solid rgba(216, 208, 193, 0.15);
   }
 
   .item:first-child {
