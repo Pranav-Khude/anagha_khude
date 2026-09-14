@@ -36,7 +36,7 @@ export const Hero = () => {
             ))}
             <div className={styles.ctas}>
               <Button variant="secondary" onClick={handleScrollToAbout}>Background</Button>
-              <Button onClick={handleScrollToWork}>View Selected Work</Button>
+              <Button onClick={handleScrollToWork}>View Selected Projects</Button>
             </div>
           </div>
           <div className={styles.imageSection}>

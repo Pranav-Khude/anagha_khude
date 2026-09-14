@@ -6,7 +6,7 @@ import styles from './Header.module.css';
 
 const navLinks = [
   { label: 'Home', to: '/' },
-  { label: 'Work', to: '/work' },
+  { label: 'Projects', to: '/work' },
   { label: 'Research & Thinking', to: '/blog' },
   { label: 'Places', to: '/places' },
   { label: 'Contact', to: '/contact' },

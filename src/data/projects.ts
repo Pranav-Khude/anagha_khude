@@ -19,6 +19,7 @@ export interface Project {
   images: string[];
   featured?: boolean;
   sections?: ProjectSection[];
+  documents?: { title: string; url: string }[];
 }
 
 export const projects: Project[] = [
@@ -33,7 +34,7 @@ export const projects: Project[] = [
     objectives: [],
     approach: "",
     outcomes: "",
-    coverImage: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&h=900&fit=crop",
+    coverImage: "/fishermans bend hero.jpg",
     images: [],
     featured: true,
     sections: [
@@ -115,8 +116,11 @@ export const projects: Project[] = [
       },
       {
         label: "Project Documents",
-        content: "Fishermans Bend — Project Report\nView PDF →"
+        content: "Fishermans Bend — Project Report"
       }
+    ],
+    documents: [
+      { title: "View PDF", url: "/UPD5002_Assessment 3_ Reshaping Fishermans Bend.pdf" }
     ]
   },
   {
@@ -130,7 +134,7 @@ export const projects: Project[] = [
     objectives: [],
     approach: "",
     outcomes: "",
-    coverImage: "https://images.unsplash.com/photo-1448630360428-65456885c650?w=1200&h=900&fit=crop",
+    coverImage: "/melton-hero-image.jpg",
     images: [],
     featured: true,
     sections: [
@@ -196,8 +200,11 @@ export const projects: Project[] = [
       },
       {
         label: "Project Documents",
-        content: "50 Families a Week — Affordable Housing Strategy for Melton\nView PDF →"
+        content: "50 Families a Week — Affordable Housing Strategy for Melton"
       }
+    ],
+    documents: [
+      { title: "View PDF", url: "/Melton Affordable housing.pdf" }
     ]
   },
   {
@@ -211,7 +218,7 @@ export const projects: Project[] = [
     objectives: [],
     approach: "",
     outcomes: "",
-    coverImage: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&h=900&fit=crop",
+    coverImage: "/asparagus-project-hero.png",
     images: [],
     featured: true,
     sections: [
@@ -289,8 +296,11 @@ export const projects: Project[] = [
       },
       {
         label: "Project Documents",
-        content: "Asparagus Town — Project Report\nView PDF →"
+        content: "Asparagus Town — Project Report"
       }
+    ],
+    documents: [
+      { title: "View PDF", url: "/AG Studies_Portfolio+Poster.pdf" }
     ]
   },
   {
@@ -304,7 +314,7 @@ export const projects: Project[] = [
     objectives: [],
     approach: "",
     outcomes: "",
-    coverImage: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200&h=900&fit=crop",
+    coverImage: "/Sunshine hero.jpg",
     images: [],
     featured: true,
     sections: [
@@ -390,8 +400,11 @@ export const projects: Project[] = [
       },
       {
         label: "Project Documents",
-        content: "Sunshine North: Industry Interconnectors — Project Report\nView PDF →"
+        content: "Sunshine North: Industry Interconnectors — Project Report"
       }
+    ],
+    documents: [
+      { title: "View PDF", url: "/UPD5001_II_FINAL2.pdf" }
     ]
   },
   {
@@ -406,6 +419,8 @@ export const projects: Project[] = [
     objectives: [],
     approach: "",
     outcomes: "",
+    coverImage: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&h=900&fit=crop",
+    images: [],
     sections: [
       {
         label: "",
@@ -464,8 +479,6 @@ export const projects: Project[] = [
         content: "What I found most interesting about this research was the shift from thinking about infrastructure as something that simply serves a population to thinking about infrastructure as something that can actively shape community life.\n\nMelton's growth and cultural diversity make this particularly relevant.\n\nA library cannot solve every social challenge facing a growing municipality. But it can provide a publicly accessible place where information, learning, technology, culture and social interaction come together. That makes it a much more significant component of urban infrastructure than its traditional image suggests."
       }
     ],
-    coverImage: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=1200&h=900&fit=crop",
-    images: [],
     featured: true
   },
   {
@@ -480,6 +493,8 @@ export const projects: Project[] = [
     objectives: [],
     approach: "",
     outcomes: "",
+    coverImage: "/reserach compact cities hero.png",
+    images: [],
     sections: [
       {
         label: "",
@@ -553,10 +568,7 @@ export const projects: Project[] = [
         label: "Reflection",
         content: "The most important takeaway for me is that resilience is not created by one intervention. A cycle lane alone does not create a resilient neighbourhood. A park alone does not create a resilient neighbourhood. Higher density alone does not create a resilient neighbourhood. A public transport station alone does not create a resilient neighbourhood. Resilience comes from the relationship between these systems.\n\nA neighbourhood becomes stronger when people can live close to essential services, move without relying entirely on cars, access nature, use public spaces and maintain social connections. That is what I find most valuable about the 15-minute city as a planning idea. It is ultimately less about a number and more about proximity, accessibility and everyday life.\n\nThe question is not simply how compact our cities should become. The more important question is what kind of neighbourhoods we create within them."
       }
-    ],
-    coverImage: "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1200&h=900&fit=crop",
-    images: [],
-    featured: true
+    ]
   },
   {
     id: "economy-and-city",
@@ -570,6 +582,8 @@ export const projects: Project[] = [
     objectives: [],
     approach: "",
     outcomes: "",
+    coverImage: "/western melbourne hero.png",
+    images: [],
     sections: [
       {
         label: "",
@@ -659,10 +673,7 @@ export const projects: Project[] = [
         label: "Reflection",
         content: "This project changed the way I think about economic development in planning. Economic data can initially appear disconnected from urban design. A Location Quotient is just a number. Employment statistics are just tables. Industry classifications are just categories. But once they are connected to geography, they begin to tell a much bigger story.\n\nA high concentration of logistics tells us something about land. A growing healthcare sector tells us something about skills and institutions. Manufacturing employment tells us something about industrial land and infrastructure. Major transport investment tells us something about future economic connectivity. The role of a planner is therefore not just to read the numbers.\n\nIt is to ask:\n\nWhat do these numbers mean for the physical and economic development of a place?"
       }
-    ],
-    coverImage: "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&h=900&fit=crop",
-    images: [],
-    featured: true
+    ]
   },
   {
     id: "elsternwick",
@@ -676,6 +687,7 @@ export const projects: Project[] = [
     objectives: [],
     approach: "",
     outcomes: "",
+    coverImage: "/elsternwick hero.jpg",
     sections: [
       {
         label: "",
@@ -734,7 +746,6 @@ export const projects: Project[] = [
         content: "What I found most valuable about studying Elsternwick was seeing how much planning information can be revealed through mapping relationships.\n\nThe transport map tells one story. The walking map tells another. The cycling network adds another. The open-space map adds another. Tree cover adds another.\n\nBut when these layers are placed together, a much clearer picture of the activity centre emerges. That reinforced an approach I now use across my planning work:\n\nDon't analyse layers independently. Look for the relationships between them.\n\nGROWTH SHOULD ADD TO THE LIFE OF A PLACE, NOT REPLACE WHAT ALREADY MAKES IT WORK."
       }
     ],
-    coverImage: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&h=900&fit=crop",
     images: [],
     featured: true
   },

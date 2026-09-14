@@ -12,7 +12,7 @@ export const SelectedWork = () => {
       <div className={styles.container}>
         <header className={`${styles.header} ${isVisible ? styles.visible : ''}`}>
           <span className={styles.label}>Portfolio</span>
-          <h2 className={styles.title}>Selected Work</h2>
+          <h2 className={styles.title}>Selected Projects</h2>
         </header>
 
         <div className={styles.grid}>

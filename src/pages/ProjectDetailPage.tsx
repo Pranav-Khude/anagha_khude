@@ -32,8 +32,13 @@ export const ProjectDetailPage = () => {
             )}
           </header>
 
-          {(project.id === 'fishermans-bend' || project.id === 'melton-housing' || project.id === 'sunshine-north' || project.id === 'asparagus-town') && project.coverImage && (
+          {(project.id === 'fishermans-bend' || project.id === 'melton-housing' || project.id === 'sunshine-north') && project.coverImage && (
             <div className={styles.heroImage}>
+              <img src={project.coverImage} alt={project.title} />
+            </div>
+          )}
+          {project.id === 'asparagus-town' && project.coverImage && (
+            <div className={styles.heroImageFull}>
               <img src={project.coverImage} alt={project.title} />
             </div>
           )}
@@ -52,23 +57,40 @@ export const ProjectDetailPage = () => {
                         return (
                           <p key={pIndex} className={isNumberedSubtitle ? styles.subtitle : styles.paragraph}>{paragraph}</p>
                         );
-                      })}
+                      }                      )}
                     </div>
+                    {project.id === 'asparagus-town' && (
+                      <>
+                        {index === 4 && (
+                          <div className={styles.imagePlaceholderFull}><img src="/Asparagus-context.png" alt="Asparagus Context" /></div>
+                        )}
+                        {index === 12 && (
+                          <>
+                            <div className={styles.imagePlaceholderFull}><img src="/Asparagus-stall-1.jpg" alt="Fresh Vegetable Stall" /></div>
+                            <div className={styles.imagePlaceholderFull}><img src="/Asparagus-stall-2..jpg" alt="Fresh Vegetable Stall" /></div>
+                            <div className={styles.imagePlaceholderFull}><img src="/Asparagus-stall-3..jpg" alt="Fresh Vegetable Stall" /></div>
+                          </>
+                        )}
+                      </>
+                    )}
                     {project.id === 'fishermans-bend' && project.coverImage && (
                       <>
-                        {index === 4 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Context & Research" /></div>}
-                        {index === 5 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Analysis" /></div>}
-                        {index === 6 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Land Use & Zoning" /></div>}
-                        {index === 7 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Employment & Workforce" /></div>}
-                        {index === 8 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Movement & Public Realm" /></div>}
-                        {index === 9 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Environmental Conditions" /></div>}
-                        {index === 10 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Strategy" /></div>}
-                        {index === 11 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Cluster Industries" /></div>}
-                        {index === 12 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Build the Workforce" /></div>}
-                        {index === 13 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Adaptive Reuse" /></div>}
-                        {index === 14 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Connect Education with Industry" /></div>}
-                        {index === 15 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Support Affordable Collaboration" /></div>}
-                        {index === 16 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Final Outcome" /></div>}
+                        {index === 4 && <div className={styles.imagePlaceholder}><img src="/fishermans bend Conceptual Framework2-01.jpg" alt="Context & Research" /></div>}
+                        {index === 10 && <div className={styles.imagePlaceholder}><img src="/fishermans bend Conceptual Framework2-02.jpg" alt="Strategy" /></div>}
+                      </>
+                    )}
+                    {project.id === 'sunshine-north' && (
+                      <>
+                        {index === 4 && <div className={styles.imagePlaceholder}><img src="/Sunshine context map.jpg" alt="Context & Research" /></div>}
+                        {index === 10 && <div className={styles.imagePlaceholder}><img src="/Sunshine frame workplan.jpg" alt="Strategy" /></div>}
+                        {index === 12 && <div className={styles.imagePlaceholder}><img src="/sunshine sections-04.jpg" alt="Slow the Street" /></div>}
+                        {index === 13 && <div className={styles.imagePlaceholder}><img src="/sunshine p4 3d-01.jpg" alt="Integrate Land-Use Edges" /></div>}
+                        {index === 14 && (
+                          <>
+                            <div className={styles.imagePlaceholder}><img src="/sunshine sections-03.jpg" alt="Berkshire Road Transition Zone" /></div>
+                            <div className={styles.imagePlaceholder}><img src="/sunshine sections-01.jpg" alt="Berkshire Road Transition Zone" /></div>
+                          </>
+                        )}
                       </>
                     )}
                     {(project.id === 'public-library' || project.id === 'rethinking-the-city' || project.id === 'economy-and-city' || project.id === 'elsternwick') && index === 1 && project.coverImage && (
@@ -78,6 +100,17 @@ export const ProjectDetailPage = () => {
                     )}
                   </section>
                 ))}
+                {project.documents && project.documents.length > 0 && (
+                  <div className={styles.articleSection}>
+                    <div className={styles.sectionContent}>
+                      {project.documents.map((doc, i) => (
+                        <p key={i} className={styles.paragraph}>
+                          <a href={doc.url} target="_blank" rel="noopener noreferrer">{doc.title}</a>
+                        </p>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
               <aside className={styles.sidebar}>
                 {project.id === 'public-library' && (

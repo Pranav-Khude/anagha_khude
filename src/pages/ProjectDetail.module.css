@@ -45,6 +45,13 @@
   object-fit: cover;
 }
 
+.heroImageFull img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+
 .title {
   font-family: var(--font-sans);
   font-size: var(--text-title);
@@ -126,15 +133,27 @@
   margin-top: var(--space-lg);
   margin-bottom: var(--space-sm);
   width: 100%;
-  aspect-ratio: 16 / 9;
   overflow: hidden;
-  background-color: var(--color-border);
+  background-color: transparent;
 }
 
 .imagePlaceholder img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+}
+
+.imagePlaceholderFull {
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  width: 100%;
+  background-color: var(--color-border);
+}
+
+.imagePlaceholderFull img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .sidebar {
