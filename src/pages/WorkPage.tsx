@@ -1,10 +1,11 @@
-import { projects } from '../data';
+import { getFeaturedProjects } from '../data';
 import { ProjectCard, Footer } from '../components';
 import { useScrollReveal } from '../hooks';
 import styles from './WorkPage.module.css';
 
 export const WorkPage = () => {
   const { ref, isVisible } = useScrollReveal({ threshold: 0.1 });
+  const projects = getFeaturedProjects();
 
   return (
     <>

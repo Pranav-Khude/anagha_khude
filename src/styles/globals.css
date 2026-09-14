@@ -28,16 +28,24 @@
   --transition-base: 400ms ease;
   --transition-slow: 600ms ease-out;
 
-  --text-xs: clamp(0.875rem, 0.8rem + 0.4vw, 1rem);
-  --text-sm: clamp(0.9375rem, 0.9rem + 0.35vw, 1.0625rem);
-  --text-base: clamp(1.0625rem, 1rem + 0.4vw, 1.1875rem);
-  --text-md: clamp(1.0625rem, 1rem + 0.4vw, 1.1875rem);
-  --text-lg: clamp(1.1875rem, 1.1rem + 0.5vw, 1.375rem);
-  --text-xl: clamp(1.375rem, 1.2rem + 0.9vw, 1.75rem);
-  --text-2xl: clamp(1.5rem, 1.25rem + 1.2vw, 2rem);
-  --text-3xl: clamp(2rem, 1.5rem + 2vw, 3rem);
-  --text-4xl: clamp(2.5rem, 1.75rem + 3vw, 4rem);
-  --text-5xl: clamp(3rem, 2rem + 4vw, 5rem);
+  --text-label: clamp(0.75rem, 0.7rem + 0.25vw, 0.8125rem);
+  --text-meta: clamp(0.9375rem, 0.875rem + 0.3vw, 1rem);
+  --text-body: clamp(1.0625rem, 1rem + 0.35vw, 1.125rem);
+  --text-subheading: clamp(1.1875rem, 1.1rem + 0.5vw, 1.3125rem);
+  --text-heading: clamp(1.5rem, 1.35rem + 0.75vw, 1.75rem);
+  --text-title: clamp(2rem, 1.75rem + 1.25vw, 2.5rem);
+  --text-hero: clamp(2.5rem, 2rem + 2.5vw, 3.5rem);
+
+  --text-xs: var(--text-label);
+  --text-sm: var(--text-meta);
+  --text-base: var(--text-body);
+  --text-md: var(--text-body);
+  --text-lg: var(--text-subheading);
+  --text-xl: var(--text-heading);
+  --text-2xl: var(--text-heading);
+  --text-3xl: var(--text-title);
+  --text-4xl: var(--text-title);
+  --text-5xl: var(--text-hero);
 }
 
 *,
@@ -54,7 +62,7 @@ html {
 
 body {
   font-family: var(--font-sans);
-  font-size: var(--text-base);
+  font-size: var(--text-body);
   line-height: 1.65;
   color: var(--color-text);
   background-color: var(--color-bg);

@@ -32,6 +32,12 @@ export const ProjectDetailPage = () => {
             )}
           </header>
 
+          {(project.id === 'fishermans-bend' || project.id === 'melton-housing' || project.id === 'sunshine-north' || project.id === 'asparagus-town') && project.coverImage && (
+            <div className={styles.heroImage}>
+              <img src={project.coverImage} alt={project.title} />
+            </div>
+          )}
+
           {isBlogArticle ? (
             <div className={styles.articleLayout}>
               <div className={styles.articleContent}>
@@ -41,11 +47,31 @@ export const ProjectDetailPage = () => {
                       <h2 className={styles.sectionLabel}>{section.label}</h2>
                     )}
                     <div className={styles.sectionContent}>
-                      {section.content.split('\n\n').map((paragraph, pIndex) => (
-                        <p key={pIndex} className={styles.paragraph}>{paragraph}</p>
-                      ))}
+                      {section.content.trim().split('\n\n').map((paragraph, pIndex) => {
+                        const isNumberedSubtitle = /^\d+ — ./.test(paragraph);
+                        return (
+                          <p key={pIndex} className={isNumberedSubtitle ? styles.subtitle : styles.paragraph}>{paragraph}</p>
+                        );
+                      })}
                     </div>
-                    {index === 1 && project.coverImage && (
+                    {project.id === 'fishermans-bend' && project.coverImage && (
+                      <>
+                        {index === 4 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Context & Research" /></div>}
+                        {index === 5 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Analysis" /></div>}
+                        {index === 6 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Land Use & Zoning" /></div>}
+                        {index === 7 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Employment & Workforce" /></div>}
+                        {index === 8 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Movement & Public Realm" /></div>}
+                        {index === 9 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Environmental Conditions" /></div>}
+                        {index === 10 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Strategy" /></div>}
+                        {index === 11 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Cluster Industries" /></div>}
+                        {index === 12 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Build the Workforce" /></div>}
+                        {index === 13 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Adaptive Reuse" /></div>}
+                        {index === 14 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Connect Education with Industry" /></div>}
+                        {index === 15 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Support Affordable Collaboration" /></div>}
+                        {index === 16 && <div className={styles.imagePlaceholder}><img src={project.coverImage} alt="Final Outcome" /></div>}
+                      </>
+                    )}
+                    {(project.id === 'public-library' || project.id === 'rethinking-the-city' || project.id === 'economy-and-city' || project.id === 'elsternwick') && index === 1 && project.coverImage && (
                       <div className={styles.imagePlaceholder}>
                         <img src={project.coverImage} alt="Research" />
                       </div>
@@ -147,6 +173,134 @@ export const ProjectDetailPage = () => {
                     <div className={styles.sidebarSection}>
                       <h3 className={styles.sidebarLabel}>Focus</h3>
                       <p className={styles.sidebarValue}>Activity centres · Public realm · Transport · Walking · Cycling · Open space · Landscape · Urban character</p>
+                    </div>
+                  </>
+                )}
+                {project.id === 'fishermans-bend' && (
+                  <>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Project Type</h3>
+                      <p className={styles.sidebarValue}>Strategic Planning · Industrial Planning · Urban Design</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Location</h3>
+                      <p className={styles.sidebarValue}>Fishermans Bend, Melbourne, Victoria</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Year</h3>
+                      <p className={styles.sidebarValue}>2024</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Role</h3>
+                      <p className={styles.sidebarValue}>Planning Research · Spatial Analysis · Strategic Planning · Urban Design</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Project Format</h3>
+                      <p className={styles.sidebarValue}>Team Project</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Team</h3>
+                      <p className={styles.sidebarValue}>Anagha Khude · Jenny Yang · Mohanapriya MJ</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Tools</h3>
+                      <p className={styles.sidebarValue}>GIS · Spatial Mapping · Spatial Analysis · Diagramming · Urban Design</p>
+                    </div>
+                  </>
+                )}
+                {project.id === 'melton-housing' && (
+                  <>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Project Type</h3>
+                      <p className={styles.sidebarValue}>Strategic Housing Planning · Housing Policy · Urban Planning</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Location</h3>
+                      <p className={styles.sidebarValue}>Melton, Victoria</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Year</h3>
+                      <p className={styles.sidebarValue}>2024</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Role</h3>
+                      <p className={styles.sidebarValue}>Team Project</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Team</h3>
+                      <p className={styles.sidebarValue}>Anagha Khude · Samuel Granger · Adam Ali · John Momis</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Key Themes</h3>
+                      <p className={styles.sidebarValue}>Affordable Housing · Housing Diversity · Growth Areas · Land Regeneration · Planning Policy · Partnerships · Connectivity · Inclusive Communities</p>
+                    </div>
+                  </>
+                )}
+                {project.id === 'sunshine-north' && (
+                  <>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Project Type</h3>
+                      <p className={styles.sidebarValue}>Industrial Precinct Planning · Mobility Planning · Urban Design · Active Transport Planning</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Location</h3>
+                      <p className={styles.sidebarValue}>Sunshine North, Victoria</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Year</h3>
+                      <p className={styles.sidebarValue}>2024</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Role</h3>
+                      <p className={styles.sidebarValue}>Urban Planning & Urban Design</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Project Format</h3>
+                      <p className={styles.sidebarValue}>Collaborative Team Project</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Team</h3>
+                      <p className={styles.sidebarValue}>Anagha Khude · Rif</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Scale</h3>
+                      <p className={styles.sidebarValue}>Suburb → Precinct → Street → Intervention</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Tools</h3>
+                      <p className={styles.sidebarValue}>GIS · Spatial Analysis · Mapping · Urban Design · Street Design · Diagramming</p>
+                    </div>
+                  </>
+                )}
+                {project.id === 'asparagus-town' && (
+                  <>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Project Type</h3>
+                      <p className={styles.sidebarValue}>Agropolitan Planning · Rural–Urban Planning · Urban Design</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Location</h3>
+                      <p className={styles.sidebarValue}>Koo Wee Rup, Victoria</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Year</h3>
+                      <p className={styles.sidebarValue}>2024</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Role</h3>
+                      <p className={styles.sidebarValue}>Individual Project</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Focus</h3>
+                      <p className={styles.sidebarValue}>Agriculture · Mobility · Ecology · Public Realm</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Key Interventions</h3>
+                      <p className={styles.sidebarValue}>5 km Landscape Framework · 40 km/h Reduced-Speed Zone · Walking & Cycling Network · Fresh Vegetable Stalls · Bio-links · Ecological Habitat Consideration</p>
+                    </div>
+                    <div className={styles.sidebarSection}>
+                      <h3 className={styles.sidebarLabel}>Tools</h3>
+                      <p className={styles.sidebarValue}>GIS · Spatial Analysis · Mapping · Urban Design · Landscape Planning · Diagramming</p>
                     </div>
                   </>
                 )}

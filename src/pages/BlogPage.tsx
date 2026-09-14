@@ -68,12 +68,14 @@ export const BlogPage = () => {
             </div>
           </section>
 
-          <div className={styles.comingSoon}>
-            <p className={styles.comingSoonLabel}>Ongoing</p>
-            <p className={styles.comingSoonText}>More research coming soon.</p>
-            <p className={styles.comingSoonSubtext}>
-              Stay tuned for articles, case studies, and reflections on place, policy, and design.
-            </p>
+          <div className={styles.grid}>
+            <div className={styles.comingSoon}>
+              <p className={styles.comingSoonLabel}>Ongoing</p>
+              <p className={styles.comingSoonText}>More research coming soon.</p>
+              <p className={styles.comingSoonSubtext}>
+                Stay tuned for articles, case studies, and reflections on place, policy, and design.
+              </p>
+            </div>
           </div>
         </div>
       </main>
